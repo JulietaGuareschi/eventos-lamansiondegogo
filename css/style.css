@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
     background-color: rgb(239, 239, 65);
     display: flex;
@@ -127,6 +132,13 @@ footer div img{
     height: 300px;
 }
 
-@media screen (min-width: 768px){
-    
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
 }
