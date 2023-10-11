@@ -4,6 +4,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-direction: column;
 }
 
 header img{
@@ -12,9 +13,10 @@ header img{
 
 header nav ul{
     list-style: none;
-    display: flex;
-    column-gap: 20px;
-    font-size: 25px;
+}
+
+header nav ul li{
+    font-size: 20px;
 }
 
 main{
@@ -123,4 +125,8 @@ footer div img{
 .video-galeria{
     width: 300px;
     height: 300px;
+}
+
+@media screen (min-width: 768px){
+    
 }
