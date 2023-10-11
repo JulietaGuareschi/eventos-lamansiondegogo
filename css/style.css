@@ -58,12 +58,21 @@ section div img{
 }
 
 .galeria-fotos{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    margin: 1rem 3rem 3rem 1rem;
+    gap: 1rem;
+}
+
+.galeria-fotos div{
+    height: 300px;
+}
+
+.galeria-fotos div img{
     width: 100%;
-    margin-bottom: 100px ;
-    background-color: blue;
-    column-gap: 30px;
-    list-style: none;
+    height: 100%;
+    object-fit: cover;
 }
 
 .eventos-inicio{
@@ -141,4 +150,27 @@ footer div img{
         justify-content: space-evenly;
         gap: 10px;
     }
+    .galeria-fotos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img5"
+        "img6 img6"
+        "img7 img8"
+        ;
+    }
+
+    .img-cinco{
+        grid-area: img5;
+    }
+    .img-seis{
+        grid-area: img6;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
 }
