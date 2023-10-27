@@ -1,0 +1,99 @@
+//media queries mobile
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    .contenido-inicio{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .contenido-inicio img{
+        width: 50vw;
+    }
+    .eventos-inicio{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .eventos-inicio img {
+        width: 50vw;
+    }
+    .contenido-contacto{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .contenido-inicio-talleres{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .contenido-inicio-talleres img{
+        width: 50vw;
+    }
+    .contenido-texto {
+        text-align: center;
+        width: 50vw;
+    }
+    .titulo-inicio{
+        width: 50vw;
+        text-align: center;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 5px;
+    }
+    header nav ul{
+        list-style: none;
+        column-gap: 20px;
+        font-size: 25px;
+        flex-direction: column;
+    }    
+    header img{
+        width: 60vw;
+    }    
+    .contenedor-flex{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem 3rem 3rem 3rem;
+        gap: 1rem; 
+    }  
+}
+
+//media queries a tablet
+@media screen and (max-width: 1024px){
+    .contenido-inicio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        ;
+    }
+    .contenido-texto1{
+        grid-area: img1;
+    }
+    .img-1{
+        grid-area: img2;
+    }
+    .contenido-texto2{
+        grid-area: img3;
+    }
+    .img-2{
+        grid-area: img4;
+    }
+    .contenido-texto3{
+        grid-area: img5;
+    }
+    .img-3{
+        grid-area: img6;
+    }
+}

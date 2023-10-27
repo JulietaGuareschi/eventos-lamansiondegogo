@@ -1,0 +1,29 @@
+main{
+    section{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: rgb(19, 132, 19);
+        }
+        .contenido-contacto{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 100px ;
+            background-color: rgb(239, 239, 65);
+            column-gap: 30px;               
+            .titulo-inicio{
+                width: 20%;
+                h2{
+                    background-color: rgb(19, 132, 19);
+                    color: rgb(99, 217, 99); 
+                }
+            }                
+        }
+        .foto-mansion{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        } 
+    }
+}

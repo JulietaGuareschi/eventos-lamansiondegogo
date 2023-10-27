@@ -1,0 +1,26 @@
+main{
+    background-color: rgb(99, 217, 99) ;
+    padding: 10px;
+    section{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: rgb(19, 132, 19);
+        }
+        .galeria{
+            display: grid;
+            width: 100%;
+            margin-bottom: 100px ;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: (3, 30vh);
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            .video-galeria{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}

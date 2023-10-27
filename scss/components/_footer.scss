@@ -1,0 +1,22 @@
+footer{
+    background-color: blueviolet;
+    padding: 15px;
+    .contenedor-flex{
+        display: flex;
+        justify-content: center;
+        .titulo-footer{
+            list-style: none;
+            align-items: center;
+            column-gap: 100px;
+            font-size: 18px;
+            padding: 20px;
+            .contenido-footer{
+                margin: 0;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
